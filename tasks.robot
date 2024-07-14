@@ -9,8 +9,7 @@ Library           RPA.Windows
 ${SONG_NAME}=     EL nayya
 
 *** Tasks ***
-Open Spotify desktop application and play a song
-    Open the Spotify desktop application
+EL nayya    Open the Spotify desktop application
     Search for the song
     Select the song
     Play the song

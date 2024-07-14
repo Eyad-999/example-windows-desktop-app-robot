@@ -17,16 +17,16 @@ EL nayya    Open the Spotify desktop application
 *** Keywords ***
 Open the Spotify desktop application
     Windows Search    Spotify
-    Sleep    3s
+    Sleep    5s
 
 Search for the song
     Send Keys    keys={CTRL}l
     Send Keys    keys=${SONG_NAME}
-    Sleep    3s
+    Sleep    5s
 
 Select the song
     Send Keys    keys={ENTER}{TAB}{ENTER}
-    Sleep    3s
+    Sleep    5s
 
 Play the song
     Send Keys    keys={ENTER}

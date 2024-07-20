@@ -19,7 +19,7 @@ Open the Spotify desktop application
     Windows Search    Spotify
     Sleep    5s
 
-Search for the song
+    Search for the song
     Send Keys    keys={CTRL}l
     Send Keys    keys=${SONG_NAME}
     Sleep    5s

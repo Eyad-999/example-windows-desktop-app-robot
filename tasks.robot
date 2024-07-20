@@ -6,10 +6,11 @@ Documentation     Spotify Windows desktop application robot. Opens the Spotify
 Library           RPA.Windows
 
 *** Variables ***
-${SONG_NAME}=     EL nayya
+${SONG_NAME}=     Monody
 
 *** Tasks ***
-EL nayya    Open the Spotify desktop application
+Open Spotify desktop application and play a song
+    Open the Spotify desktop application
     Search for the song
     Select the song
     Play the song
@@ -17,16 +18,18 @@ EL nayya    Open the Spotify desktop application
 *** Keywords ***
 Open the Spotify desktop application
     Windows Search    Spotify
-    Sleep    5s
+    Sleep    3s
 
-    Search for the song
+Search for the song
     Send Keys    keys={CTRL}l
     Send Keys    keys=${SONG_NAME}
-    Sleep    5s
+    Sleep    3s
 
 Select the song
     Send Keys    keys={ENTER}{TAB}{ENTER}
-    Sleep    5s
+    Sleep    3s
 
 Play the song
     Send Keys    keys={ENTER}
+        
+        

@@ -1,9 +1,4 @@
 *** Settings ***
-Documentation     Spotify Windows desktop application robot. Opens the Spotify
-...               desktop application, searches for the given song, and plays
-...               the song. Demonstrates the basic Windows automation
-...               capabilities of the RPA Framework.
-*** Settings ***
 Library           RPA.Desktop
 Library           RPA.Windows
 Library           RPA.Robocorp.Vault

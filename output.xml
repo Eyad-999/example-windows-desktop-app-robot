@@ -1,79 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20240721 13:14:10.840" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20240721 13:55:46.306" rpa="true" schemaversion="3">
 <suite id="s1" name="Tasks" source="c:\Users\dell\Desktop\Ea\example-windows-desktop-app-robot\tasks.robot">
 <test id="s1-t1" name="Open EGX X-stream Workstation and Login" line="14">
 <kw name="Open Application">
 <arg>${APP_NAME}</arg>
-<kw name="Press Keys">
+<kw name="Send Keys" library="RPA.Windows">
 <arg>win</arg>
 <arg>text=${app_name}</arg>
-<msg timestamp="20240721 13:14:13.974" level="FAIL">No keyword with name 'Press Keys' found.</msg>
-<status status="FAIL" starttime="20240721 13:14:13.973" endtime="20240721 13:14:13.976"/>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20240721 13:55:47.202" level="INFO">Getting element with locator: win</msg>
+<msg timestamp="20240721 13:55:47.366" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x000002281349BBE0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20240721 13:55:47.366" level="INFO">Locator 'win' produced matcher: MatchObject(locators=[('Name', 'win', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240721 13:55:58.499" level="INFO">2024-07-21 13:55:58.498 locators.py[267] _get_control_from_params -&gt; Find Control Timeout(10s): {Name: 'win'}</msg>
+<msg timestamp="20240721 13:55:58.500" level="FAIL">ElementNotFound: Element not found with locator 'win'</msg>
+<status status="FAIL" starttime="20240721 13:55:47.202" endtime="20240721 13:55:58.572"/>
 </kw>
 <kw name="Press Keys">
 <arg>enter</arg>
-<status status="NOT RUN" starttime="20240721 13:14:13.980" endtime="20240721 13:14:13.980"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.575" endtime="20240721 13:55:58.576"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240721 13:14:13.980" endtime="20240721 13:14:13.981"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.576" endtime="20240721 13:55:58.576"/>
 </kw>
-<status status="FAIL" starttime="20240721 13:14:13.971" endtime="20240721 13:14:13.981"/>
+<status status="FAIL" starttime="20240721 13:55:47.201" endtime="20240721 13:55:58.576"/>
 </kw>
 <kw name="Wait Until Application Is Ready">
 <arg>${APP_NAME}</arg>
 <arg>timeout=10s</arg>
-<status status="NOT RUN" starttime="20240721 13:14:13.983" endtime="20240721 13:14:13.984"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.579" endtime="20240721 13:55:58.579"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>locator=type_in_your_username_locator</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240721 13:14:13.984" endtime="20240721 13:14:13.985"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.580" endtime="20240721 13:55:58.580"/>
 </kw>
 <kw name="Type Text">
 <arg>locator=type_in_your_username_locator</arg>
 <arg>text=your_username</arg>
-<status status="NOT RUN" starttime="20240721 13:14:13.988" endtime="20240721 13:14:13.988"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.584" endtime="20240721 13:55:58.584"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>locator=type_in_your_password_locator</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240721 13:14:13.989" endtime="20240721 13:14:13.989"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.585" endtime="20240721 13:55:58.585"/>
 </kw>
 <kw name="Type Text">
 <arg>locator=type_in_your_password_locator</arg>
 <arg>text=your_password</arg>
-<status status="NOT RUN" starttime="20240721 13:14:13.993" endtime="20240721 13:14:13.994"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.588" endtime="20240721 13:55:58.588"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>locator=login_button_locator</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240721 13:14:13.995" endtime="20240721 13:14:13.995"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.588" endtime="20240721 13:55:58.588"/>
 </kw>
 <kw name="Wait Until Page Contains Element">
 <arg>locator=dashboard_locator</arg>
 <arg>timeout=10s</arg>
-<status status="NOT RUN" starttime="20240721 13:14:13.996" endtime="20240721 13:14:13.997"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.591" endtime="20240721 13:55:58.591"/>
 </kw>
 <kw name="Capture Screenshot">
 <arg>login_successful.png</arg>
-<status status="NOT RUN" starttime="20240721 13:14:14.000" endtime="20240721 13:14:14.000"/>
+<status status="NOT RUN" starttime="20240721 13:55:58.595" endtime="20240721 13:55:58.595"/>
 </kw>
 <doc>Open the EGX X-stream Workstation app and login.</doc>
-<status status="FAIL" starttime="20240721 13:14:13.970" endtime="20240721 13:14:14.001">No keyword with name 'Press Keys' found.</status>
+<status status="FAIL" starttime="20240721 13:55:47.200" endtime="20240721 13:55:58.597">ElementNotFound: Element not found with locator 'win'</status>
 </test>
 <doc>Spotify Windows desktop application robot. Opens the Spotify
 desktop application, searches for the given song, and plays
 the song. Demonstrates the basic Windows automation
 capabilities of the RPA Framework.</doc>
-<status status="FAIL" starttime="20240721 13:14:10.847" endtime="20240721 13:14:14.004"/>
+<status status="FAIL" starttime="20240721 13:55:46.311" endtime="20240721 13:55:58.598"/>
 </suite>
 <statistics>
 <total>

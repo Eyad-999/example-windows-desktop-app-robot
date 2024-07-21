@@ -11,13 +11,13 @@ Open EGX X-stream Workstation and Login
     [Documentation]    Open the EGX X-stream Workstation app and login.
     Open Application    ${APP_NAME}
     Wait Until Window Is Ready    ${APP_NAME}
-    Click    locator=type_in_your_username_locator
-    Type Text    locator=type_in_your_username_locator    text=your_username
-    Click    locator=type_in_your_password_locator
-    Type Text    locator=type_in_your_password_locator    text=your_password
-    Click    locator=login_button_locator
-    Wait Until Page Contains Element    locator=dashboard_locator    timeout=10s
-    Capture Screenshot    login_successful.png
+    RPA.Windows.Click    locator=type_in_your_username_locator
+    RPA.Windows.Type Text    locator=type_in_your_username_locator    text=your_username
+    RPA.Windows.Click    locator=type_in_your_password_locator
+    RPA.Windows.Type Text    locator=type_in_your_password_locator    text=your_password
+    RPA.Windows.Click    locator=login_button_locator
+    RPA.Windows.Wait Until Page Contains Element    locator=dashboard_locator    timeout=10s
+    RPA.Desktop.Capture Screenshot    login_successful.png
 
 *** Keywords ***
 Open Application
@@ -32,5 +32,5 @@ Wait Until Window Is Ready
 
 Window Should Exist
     [Arguments]    ${app_name}
-    ${result}    Run Keyword And Return Status    Get Window    ${app_name}
+    ${result}    Run Keyword And Return Status    RPA.Windows.Get Window    ${app_name}
     Should Be True    ${result}

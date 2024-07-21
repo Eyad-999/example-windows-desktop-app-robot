@@ -6,7 +6,8 @@ Documentation     Spotify Windows desktop application robot. Opens the Spotify
 Library           RPA.Windows
 
 *** Variables ***
-${SONG_NAME}=     Amira
+${SONG_NAME}=     Amira    
+
 
 *** Tasks ***
 Open Spotify desktop application and play a song

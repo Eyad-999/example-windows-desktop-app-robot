@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20240720 16:14:52.077" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20240721 12:57:49.631" rpa="true" schemaversion="3">
 <suite id="s1" name="Tasks" source="c:\Users\dell\Desktop\Ea\example-windows-desktop-app-robot\tasks.robot">
-<test id="s1-t1" name="Open Spotify desktop application and play a song" line="12">
+<test id="s1-t1" name="Open Spotify desktop application and play a song" line="13">
 <kw name="Open the Spotify desktop application">
 <kw name="Windows Search" library="RPA.Windows">
 <arg>Spotify</arg>
 <tag>window</tag>
 <doc>Use Windows search window to launch application.</doc>
-<msg timestamp="20240720 16:14:52.345" level="INFO">Sending keys '{Win}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240720 16:14:52.891" level="INFO">Sending keys 'Spotify' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240720 16:14:53.509" level="INFO">Sending keys '{Enter}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240720 16:14:52.344" endtime="20240720 16:14:57.057"/>
+<msg timestamp="20240721 12:57:50.184" level="INFO">Sending keys '{Win}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240721 12:57:50.742" level="INFO">Sending keys 'Spotify' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240721 12:57:51.354" level="INFO">Sending keys '{Enter}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240721 12:57:50.184" endtime="20240721 12:57:54.889"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240720 16:15:00.058" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240720 16:14:57.057" endtime="20240720 16:15:00.058"/>
-</kw>
-<status status="PASS" starttime="20240720 16:14:52.332" endtime="20240720 16:15:00.058"/>
+<status status="PASS" starttime="20240721 12:57:50.170" endtime="20240721 12:57:54.890"/>
 </kw>
 <kw name="Search for the song">
 <kw name="Send Keys" library="RPA.Windows">
@@ -27,8 +21,8 @@
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240720 16:15:00.060" level="INFO">Sending keys '{CTRL}l' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240720 16:15:00.059" endtime="20240720 16:15:00.625"/>
+<msg timestamp="20240721 12:57:54.894" level="INFO">Sending keys '{CTRL}l' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240721 12:57:54.892" endtime="20240721 12:57:55.467"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys=${SONG_NAME}</arg>
@@ -36,16 +30,16 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240720 16:15:00.627" level="INFO">Sending keys 'Monody' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240720 16:15:00.626" endtime="20240720 16:15:01.227"/>
+<msg timestamp="20240721 12:57:55.467" level="INFO">Sending keys 'Amira' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240721 12:57:55.467" endtime="20240721 12:57:56.058"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240720 16:15:04.231" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240720 16:15:01.228" endtime="20240720 16:15:04.232"/>
+<msg timestamp="20240721 12:57:59.060" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240721 12:57:56.058" endtime="20240721 12:57:59.060"/>
 </kw>
-<status status="PASS" starttime="20240720 16:15:00.059" endtime="20240720 16:15:04.233"/>
+<status status="PASS" starttime="20240721 12:57:54.892" endtime="20240721 12:57:59.061"/>
 </kw>
 <kw name="Select the song">
 <kw name="Send Keys" library="RPA.Windows">
@@ -54,16 +48,16 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240720 16:15:04.236" level="INFO">Sending keys '{ENTER}{TAB}{ENTER}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240720 16:15:04.235" endtime="20240720 16:15:04.827"/>
+<msg timestamp="20240721 12:57:59.065" level="INFO">Sending keys '{ENTER}{TAB}{ENTER}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240721 12:57:59.064" endtime="20240721 12:57:59.679"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240720 16:15:07.838" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240720 16:15:04.827" endtime="20240720 16:15:07.838"/>
+<msg timestamp="20240721 12:58:02.681" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240721 12:57:59.679" endtime="20240721 12:58:02.681"/>
 </kw>
-<status status="PASS" starttime="20240720 16:15:04.234" endtime="20240720 16:15:07.840"/>
+<status status="PASS" starttime="20240721 12:57:59.062" endtime="20240721 12:58:02.681"/>
 </kw>
 <kw name="Play the song">
 <kw name="Send Keys" library="RPA.Windows">
@@ -72,18 +66,18 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240720 16:15:07.845" level="INFO">Sending keys '{ENTER}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240720 16:15:07.843" endtime="20240720 16:15:08.395"/>
+<msg timestamp="20240721 12:58:02.684" level="INFO">Sending keys '{ENTER}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_09529949\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240721 12:58:02.683" endtime="20240721 12:58:03.222"/>
 </kw>
-<status status="PASS" starttime="20240720 16:15:07.841" endtime="20240720 16:15:08.396"/>
+<status status="PASS" starttime="20240721 12:58:02.682" endtime="20240721 12:58:03.223"/>
 </kw>
-<status status="PASS" starttime="20240720 16:14:52.332" endtime="20240720 16:15:08.397"/>
+<status status="PASS" starttime="20240721 12:57:50.169" endtime="20240721 12:58:03.223"/>
 </test>
 <doc>Spotify Windows desktop application robot. Opens the Spotify
 desktop application, searches for the given song, and plays
 the song. Demonstrates the basic Windows automation
 capabilities of the RPA Framework.</doc>
-<status status="PASS" starttime="20240720 16:14:52.083" endtime="20240720 16:15:08.401"/>
+<status status="PASS" starttime="20240721 12:57:49.638" endtime="20240721 12:58:03.226"/>
 </suite>
 <statistics>
 <total>

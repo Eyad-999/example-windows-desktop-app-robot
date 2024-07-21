@@ -26,7 +26,7 @@ Open EGX X-stream Workstation and Login
 *** Keywords ***
 Open Application
     [Arguments]    ${app_name}
-    Press Keys    win    text=${app_name}
+    Send Keys    win    text=${app_name}
     Press Keys    enter
     Sleep    3s  # Adjust the sleep time as necessary
         

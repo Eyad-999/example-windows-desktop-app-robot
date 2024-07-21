@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20240721 14:13:19.198" rpa="true" schemaversion="3">
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240721 14:35:32.862" rpa="true" schemaversion="4">
 <suite id="s1" name="Tasks" source="c:\Users\dell\Desktop\Ea\example-windows-desktop-app-robot\tasks.robot">
 <test id="s1-t1" name="Open EGX X-stream Workstation and Login" line="10">
 <kw name="Open Application">
@@ -8,69 +8,56 @@
 <arg>win</arg>
 <arg>text=${app_name}</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<msg timestamp="20240721 14:13:20.496" level="FAIL">ValueError: Invalid key: win</msg>
-<status status="FAIL" starttime="20240721 14:13:20.494" endtime="20240721 14:13:20.499"/>
+<msg timestamp="20240721 14:35:35.018" level="FAIL">ValueError: Invalid key: win</msg>
+<status status="FAIL" starttime="20240721 14:35:35.018" endtime="20240721 14:35:35.022"/>
 </kw>
 <kw name="Press Keys" library="RPA.Desktop">
-<arg>enter</arg>
+<arg>ENTER</arg>
 <doc>Press multiple keys down simultaneously.</doc>
-<status status="NOT RUN" starttime="20240721 14:13:20.499" endtime="20240721 14:13:20.499"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.023" endtime="20240721 14:35:35.024"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240721 14:13:20.499" endtime="20240721 14:13:20.500"/>
-</kw>
-<status status="FAIL" starttime="20240721 14:13:20.493" endtime="20240721 14:13:20.501"/>
+<status status="FAIL" starttime="20240721 14:35:35.018" endtime="20240721 14:35:35.024"/>
 </kw>
 <kw name="Wait Until Window Is Ready">
 <arg>${APP_NAME}</arg>
-<status status="NOT RUN" starttime="20240721 14:13:20.502" endtime="20240721 14:13:20.502"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.025" endtime="20240721 14:35:35.025"/>
 </kw>
-<kw name="Click" library="RPA.Windows">
+<kw name="Click Element">
 <arg>locator=type_in_your_username_locator</arg>
-<tag>action</tag>
-<tag>mouse</tag>
-<doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240721 14:13:20.503" endtime="20240721 14:13:20.503"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.028" endtime="20240721 14:35:35.028"/>
 </kw>
-<kw name="RPA.Windows.Type Text">
+<kw name="Type Text" library="RPA.Desktop">
 <arg>locator=type_in_your_username_locator</arg>
 <arg>text=your_username</arg>
-<status status="NOT RUN" starttime="20240721 14:13:20.506" endtime="20240721 14:13:20.506"/>
+<doc>Type text one letter at a time.</doc>
+<status status="NOT RUN" starttime="20240721 14:35:35.029" endtime="20240721 14:35:35.029"/>
 </kw>
-<kw name="Click" library="RPA.Windows">
+<kw name="Click Element">
 <arg>locator=type_in_your_password_locator</arg>
-<tag>action</tag>
-<tag>mouse</tag>
-<doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240721 14:13:20.507" endtime="20240721 14:13:20.507"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.031" endtime="20240721 14:35:35.033"/>
 </kw>
-<kw name="RPA.Windows.Type Text">
+<kw name="Type Text" library="RPA.Desktop">
 <arg>locator=type_in_your_password_locator</arg>
 <arg>text=your_password</arg>
-<status status="NOT RUN" starttime="20240721 14:13:20.510" endtime="20240721 14:13:20.511"/>
+<doc>Type text one letter at a time.</doc>
+<status status="NOT RUN" starttime="20240721 14:35:35.033" endtime="20240721 14:35:35.034"/>
 </kw>
-<kw name="Click" library="RPA.Windows">
+<kw name="Click Element">
 <arg>locator=login_button_locator</arg>
-<tag>action</tag>
-<tag>mouse</tag>
-<doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240721 14:13:20.511" endtime="20240721 14:13:20.512"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.037" endtime="20240721 14:35:35.037"/>
 </kw>
-<kw name="RPA.Windows.Wait Until Page Contains Element">
+<kw name="Wait Until Element Is Visible">
 <arg>locator=dashboard_locator</arg>
 <arg>timeout=10s</arg>
-<status status="NOT RUN" starttime="20240721 14:13:20.516" endtime="20240721 14:13:20.516"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.039" endtime="20240721 14:35:35.039"/>
 </kw>
-<kw name="RPA.Desktop.Capture Screenshot">
+<kw name="Capture Screenshot">
 <arg>login_successful.png</arg>
-<status status="NOT RUN" starttime="20240721 14:13:20.519" endtime="20240721 14:13:20.519"/>
+<status status="NOT RUN" starttime="20240721 14:35:35.043" endtime="20240721 14:35:35.043"/>
 </kw>
-<doc>Open the EGX X-stream Workstation app and login.</doc>
-<status status="FAIL" starttime="20240721 14:13:20.492" endtime="20240721 14:13:20.521">ValueError: Invalid key: win</status>
+<status status="FAIL" starttime="20240721 14:35:35.016" endtime="20240721 14:35:35.044">ValueError: Invalid key: win</status>
 </test>
-<status status="FAIL" starttime="20240721 14:13:19.213" endtime="20240721 14:13:20.524"/>
+<status status="FAIL" starttime="20240721 14:35:32.868" endtime="20240721 14:35:35.047"/>
 </suite>
 <statistics>
 <total>

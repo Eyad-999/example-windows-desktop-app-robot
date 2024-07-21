@@ -22,6 +22,7 @@ Open EGX X-stream Workstation and Login
     Click    locator=login_button_locator
     Wait Until Page Contains Element    locator=dashboard_locator    timeout=10s
     Capture Screenshot    login_successful.png
+
 *** Keywords ***
 Open Application
     [Arguments]    ${app_name}

@@ -3,18 +3,19 @@ Documentation     Spotify Windows desktop application robot. Opens the Spotify
 ...               desktop application, searches for the given song, and plays
 ...               the song. Demonstrates the basic Windows automation
 ...               capabilities of the RPA Framework.
-Library           RPA.Windows
+*** Settings ***
+Library           RPA.Desktop
 Library           RPA.Windows
 Library           RPA.Robocorp.Vault
-*** Variables ***
-${APP_NAME}       EGX X-stream Workstation    
 
+*** Variables ***
+${APP_NAME}       EGX X-stream Workstation
 
 *** Tasks ***
 Open EGX X-stream Workstation and Login
     [Documentation]    Open the EGX X-stream Workstation app and login.
     Open Application    ${APP_NAME}
-    Wait Until Application Is Ready    ${APP_NAME}    timeout=10s
+    Wait Until Window Is Ready    ${APP_NAME}
     Click    locator=type_in_your_username_locator
     Type Text    locator=type_in_your_username_locator    text=your_username
     Click    locator=type_in_your_password_locator
@@ -26,7 +27,15 @@ Open EGX X-stream Workstation and Login
 *** Keywords ***
 Open Application
     [Arguments]    ${app_name}
-    Send Keys    win    text=${app_name}
+    Press Keys    win    text=${app_name}
     Press Keys    enter
     Sleep    3s  # Adjust the sleep time as necessary
-        
+
+Wait Until Window Is Ready
+    [Arguments]    ${app_name}
+    Wait Until Keyword Succeeds    retry=10x    interval=1s    Window Should Exist    ${app_name}
+
+Window Should Exist
+    [Arguments]    ${app_name}
+    ${result}    Run Keyword And Return Status    Get Window    ${app_name}
+    Should Be True    ${result}

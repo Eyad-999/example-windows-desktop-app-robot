@@ -25,9 +25,8 @@ Test login
     Sleep    3s
 
 Select the secuirity 
-    Send Keys    id:ListViewSubItem-2
-    Click        id:ListViewSubItem-2
+    Wait Until Keyword Succeeds   10x   2s   ${SECURITY_LOCATOR}
+    Click    ${SECURITY_LOCATOR}
     Sleep    3s
-
 Play the song
     Send Keys    keys={ENTER}

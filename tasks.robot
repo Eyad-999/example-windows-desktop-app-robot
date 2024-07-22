@@ -4,7 +4,7 @@ Library           RPA.Windows
 Library           RPA.application     
 *** Variables ***
 ${USER_NAME}=     01001a
-${SECURITY_LOCATOR}    name:ListViewSubItem
+${SECURITY_LOCATOR}    name:EGMFC001MM19
 *** Tasks ***
 Open EGX X-stream Workstation desktop application
     Open the EGX X-stream Workstation desktop application

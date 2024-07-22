@@ -6,11 +6,11 @@ Library           RPA.application
 ${USER_NAME}=     01001a
 ${SECURITY_LOCATOR}    name:ListViewSubItem
 *** Tasks ***
-Open EGX X-stream Workstation desktop application and play a song
+Open EGX X-stream Workstation desktop application
     Open the EGX X-stream Workstation desktop application
     Test login 
     Select the secuirity
-    Play the song
+
 
 *** Keywords ***
 Open the EGX X-stream Workstation desktop application

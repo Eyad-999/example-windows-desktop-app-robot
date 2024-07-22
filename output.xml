@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240722 15:38:38.816" rpa="true" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240722 15:41:13.464" rpa="true" schemaversion="4">
 <suite id="s1" name="Tasks" source="c:\Users\dell\Desktop\Ea\example-windows-desktop-app-robot\tasks.robot">
-<test id="s1-t1" name="Open EGX X-stream Workstation desktop application and play a song" line="9">
+<test id="s1-t1" name="Open EGX X-stream Workstation desktop application" line="9">
 <kw name="Open the EGX X-stream Workstation desktop application">
 <kw name="Windows Search" library="RPA.Windows">
 <arg>EGX X-stream Workstation</arg>
 <tag>window</tag>
 <doc>Use Windows search window to launch application.</doc>
-<msg timestamp="20240722 15:38:39.152" level="INFO">Sending keys '{Win}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240722 15:38:39.696" level="INFO">Sending keys 'EGX X-stream Workstation' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240722 15:38:40.619" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 15:38:39.151" endtime="20240722 15:38:44.171"/>
+<msg timestamp="20240722 15:41:13.795" level="INFO">Sending keys '{Win}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240722 15:41:14.335" level="INFO">Sending keys 'EGX X-stream Workstation' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240722 15:41:15.249" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240722 15:41:13.794" endtime="20240722 15:41:18.789"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240722 15:38:47.185" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240722 15:38:44.172" endtime="20240722 15:38:47.185"/>
+<msg timestamp="20240722 15:41:21.802" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240722 15:41:18.789" endtime="20240722 15:41:21.802"/>
 </kw>
-<status status="PASS" starttime="20240722 15:38:39.151" endtime="20240722 15:38:47.185"/>
+<status status="PASS" starttime="20240722 15:41:13.794" endtime="20240722 15:41:21.803"/>
 </kw>
 <kw name="Test login">
 <kw name="Send Keys" library="RPA.Windows">
@@ -27,8 +27,8 @@
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240722 15:38:47.190" level="INFO">Sending keys '{CTRL}l' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 15:38:47.188" endtime="20240722 15:38:47.758"/>
+<msg timestamp="20240722 15:41:21.806" level="INFO">Sending keys '{CTRL}l' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240722 15:41:21.805" endtime="20240722 15:41:22.381"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys=${USER_NAME}</arg>
@@ -36,8 +36,8 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240722 15:38:47.760" level="INFO">Sending keys '01001a' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 15:38:47.759" endtime="20240722 15:38:48.369"/>
+<msg timestamp="20240722 15:41:22.382" level="INFO">Sending keys '01001a' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240722 15:41:22.381" endtime="20240722 15:41:22.991"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys={enter}</arg>
@@ -45,16 +45,16 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240722 15:38:48.370" level="INFO">Sending keys '{enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 15:38:48.369" endtime="20240722 15:38:48.913"/>
+<msg timestamp="20240722 15:41:22.993" level="INFO">Sending keys '{enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240722 15:41:22.991" endtime="20240722 15:41:23.525"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240722 15:38:51.915" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240722 15:38:48.913" endtime="20240722 15:38:51.915"/>
+<msg timestamp="20240722 15:41:26.535" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240722 15:41:23.525" endtime="20240722 15:41:26.535"/>
 </kw>
-<status status="PASS" starttime="20240722 15:38:47.188" endtime="20240722 15:38:51.915"/>
+<status status="PASS" starttime="20240722 15:41:21.803" endtime="20240722 15:41:26.535"/>
 </kw>
 <kw name="Select the secuirity">
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
@@ -63,69 +63,66 @@ defined by given locator.</doc>
 <arg>${SECURITY_LOCATOR}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:38:51.921" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:38:51.921" endtime="20240722 15:38:51.921"/>
+<msg timestamp="20240722 15:41:26.541" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:26.541" endtime="20240722 15:41:26.541"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:38:53.926" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:38:53.926" endtime="20240722 15:38:53.926"/>
+<msg timestamp="20240722 15:41:28.549" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:28.549" endtime="20240722 15:41:28.551"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:38:55.933" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:38:55.933" endtime="20240722 15:38:55.933"/>
+<msg timestamp="20240722 15:41:30.569" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:30.569" endtime="20240722 15:41:30.569"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:38:57.949" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:38:57.949" endtime="20240722 15:38:57.949"/>
+<msg timestamp="20240722 15:41:32.579" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:32.579" endtime="20240722 15:41:32.579"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:38:59.964" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:38:59.964" endtime="20240722 15:38:59.964"/>
+<msg timestamp="20240722 15:41:34.595" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:34.595" endtime="20240722 15:41:34.595"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:39:01.976" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:39:01.976" endtime="20240722 15:39:01.976"/>
+<msg timestamp="20240722 15:41:36.600" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:36.600" endtime="20240722 15:41:36.601"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:39:03.984" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:39:03.984" endtime="20240722 15:39:03.984"/>
+<msg timestamp="20240722 15:41:38.619" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:38.619" endtime="20240722 15:41:38.621"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:39:05.992" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:39:05.992" endtime="20240722 15:39:05.992"/>
+<msg timestamp="20240722 15:41:40.637" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:40.637" endtime="20240722 15:41:40.637"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:39:08.001" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:39:08.000" endtime="20240722 15:39:08.001"/>
+<msg timestamp="20240722 15:41:42.647" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:42.645" endtime="20240722 15:41:42.647"/>
 </kw>
 <kw name="name:ListViewSubItem">
-<msg timestamp="20240722 15:39:10.020" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:39:10.020" endtime="20240722 15:39:10.020"/>
+<msg timestamp="20240722 15:41:44.654" level="FAIL">No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:44.653" endtime="20240722 15:41:44.654"/>
 </kw>
-<msg timestamp="20240722 15:39:10.021" level="FAIL">Keyword '${SECURITY_LOCATOR}' failed after retrying 10 times. The last error was: No keyword with name 'name:ListViewSubItem' found.</msg>
-<status status="FAIL" starttime="20240722 15:38:51.917" endtime="20240722 15:39:10.021"/>
+<msg timestamp="20240722 15:41:44.654" level="FAIL">Keyword '${SECURITY_LOCATOR}' failed after retrying 10 times. The last error was: No keyword with name 'name:ListViewSubItem' found.</msg>
+<status status="FAIL" starttime="20240722 15:41:26.537" endtime="20240722 15:41:44.655"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>${SECURITY_LOCATOR}</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240722 15:39:10.022" endtime="20240722 15:39:10.022"/>
+<status status="NOT RUN" starttime="20240722 15:41:44.655" endtime="20240722 15:41:44.655"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240722 15:39:10.022" endtime="20240722 15:39:10.023"/>
+<status status="NOT RUN" starttime="20240722 15:41:44.655" endtime="20240722 15:41:44.655"/>
 </kw>
-<status status="FAIL" starttime="20240722 15:38:51.916" endtime="20240722 15:39:10.023"/>
+<status status="FAIL" starttime="20240722 15:41:26.535" endtime="20240722 15:41:44.655"/>
 </kw>
-<kw name="Play the song">
-<status status="NOT RUN" starttime="20240722 15:39:10.024" endtime="20240722 15:39:10.024"/>
-</kw>
-<status status="FAIL" starttime="20240722 15:38:39.150" endtime="20240722 15:39:10.026">Keyword '${SECURITY_LOCATOR}' failed after retrying 10 times. The last error was: No keyword with name 'name:ListViewSubItem' found.</status>
+<status status="FAIL" starttime="20240722 15:41:13.793" endtime="20240722 15:41:44.657">Keyword '${SECURITY_LOCATOR}' failed after retrying 10 times. The last error was: No keyword with name 'name:ListViewSubItem' found.</status>
 </test>
 <doc>Spotify Windows desktop application robot. Opens the Spotify</doc>
-<status status="FAIL" starttime="20240722 15:38:38.821" endtime="20240722 15:39:10.030"/>
+<status status="FAIL" starttime="20240722 15:41:13.471" endtime="20240722 15:41:44.659"/>
 </suite>
 <statistics>
 <total>

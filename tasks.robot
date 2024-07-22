@@ -25,6 +25,6 @@ Test login
     Sleep    3s
 
 Select the secuirity 
-#   Wait Until Keyword Succeeds   10x   2s   ${SECURITY_LOCATOR}
-    Click    ${SECURITY_LOCATOR}
+    Wait Until Keyword Succeeds   10x   2s   ${SECURITY_LOCATOR}
+    Click    name:"EGMFC001MM19"
     Sleep    3s

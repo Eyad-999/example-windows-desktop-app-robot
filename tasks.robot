@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation     Spotify Windows desktop application robot. Opens the Spotify
 Library           RPA.Windows
-
+Library           RPA.application     
 *** Variables ***
 ${USER_NAME}=     01001a
-
+${SECURITY_LOCATOR}    name:ListViewSubItem
 *** Tasks ***
 Open EGX X-stream Workstation desktop application and play a song
     Open the EGX X-stream Workstation desktop application

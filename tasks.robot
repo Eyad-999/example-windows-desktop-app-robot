@@ -6,15 +6,15 @@ Library           RPA.Windows
 ${SONG_NAME}=     Monody
 
 *** Tasks ***
-Open Spotify desktop application and play a song
-    Open the Spotify desktop application
+Open EGX X-stream Workstation desktop application and play a song
+    Open the EGX X-stream Workstation desktop application
     Search for the song
     Select the song
     Play the song
 
 *** Keywords ***
-Open the Spotify desktop application
-    Windows Search    Spotify
+Open the EGX X-stream Workstation desktop application
+    Windows Search    EGX X-stream Workstation
     Sleep    3s
 
 Search for the song

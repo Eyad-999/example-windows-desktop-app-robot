@@ -28,5 +28,3 @@ Select the secuirity
     Wait Until Keyword Succeeds   10x   2s   ${SECURITY_LOCATOR}
     Click    ${SECURITY_LOCATOR}
     Sleep    3s
-Play the song
-    Send Keys    keys={ENTER}

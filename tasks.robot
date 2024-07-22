@@ -17,13 +17,15 @@ Open the EGX X-stream Workstation desktop application
     Windows Search    EGX X-stream Workstation
     Sleep    3s
 
-Search for the song
+
+Test login 
     Send Keys    keys={CTRL}l
-    Send Keys    keys=${SONG_NAME}
+    Send Keys    keys=${USER_NAME}
     Sleep    3s
 
-Select the song
-    Send Keys    keys={ENTER}{TAB}{ENTER}
+Select the secuirity 
+    Send Keys    id:ListViewSubItem-2
+    Click        id:ListViewSubItem-2
     Sleep    3s
 
 Play the song

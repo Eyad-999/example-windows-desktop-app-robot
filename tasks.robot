@@ -3,13 +3,13 @@ Documentation     Spotify Windows desktop application robot. Opens the Spotify
 Library           RPA.Windows
 
 *** Variables ***
-${SONG_NAME}=     Monody
+${USER_NAME}=     01001a
 
 *** Tasks ***
 Open EGX X-stream Workstation desktop application and play a song
     Open the EGX X-stream Workstation desktop application
-    Search for the song
-    Select the song
+    Test login 
+    Select the secuirity
     Play the song
 
 *** Keywords ***

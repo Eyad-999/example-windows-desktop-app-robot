@@ -21,6 +21,7 @@ Open the EGX X-stream Workstation desktop application
 Test login 
     Send Keys    keys={CTRL}l
     Send Keys    keys=${USER_NAME}
+    Send Keys    keys={enter}
     Sleep    3s
 
 Select the secuirity 

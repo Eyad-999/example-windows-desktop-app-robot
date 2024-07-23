@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240723 13:59:13.605" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240723 14:08:21.782" rpa="false" schemaversion="4">
 <suite id="s1" name="Tasks" source="c:\Users\dell\Desktop\Ea\example-windows-desktop-app-robot\tasks.robot">
 <test id="s1-t1" name="Open EGX X-stream Workstation desktop application and perform actions" line="13">
 <kw name="Open the EGX X-stream Workstation desktop application">
@@ -7,18 +7,18 @@
 <arg>${APP_NAME}</arg>
 <tag>window</tag>
 <doc>Use Windows search window to launch application.</doc>
-<msg timestamp="20240723 13:59:14.776" level="INFO">Sending keys '{Win}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240723 13:59:15.320" level="INFO">Sending keys 'EGX X-stream Workstation' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240723 13:59:16.229" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240723 13:59:14.775" endtime="20240723 13:59:19.777"/>
+<msg timestamp="20240723 14:08:23.058" level="INFO">Sending keys '{Win}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240723 14:08:23.602" level="INFO">Sending keys 'EGX X-stream Workstation' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240723 14:08:24.506" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 14:08:23.056" endtime="20240723 14:08:28.043"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240723 13:59:24.786" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20240723 13:59:19.778" endtime="20240723 13:59:24.786"/>
+<msg timestamp="20240723 14:08:33.046" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240723 14:08:28.044" endtime="20240723 14:08:33.046"/>
 </kw>
-<status status="PASS" starttime="20240723 13:59:14.775" endtime="20240723 13:59:24.786"/>
+<status status="PASS" starttime="20240723 14:08:23.056" endtime="20240723 14:08:33.046"/>
 </kw>
 <kw name="Test login">
 <kw name="Send Keys" library="RPA.Windows">
@@ -27,14 +27,14 @@
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240723 13:59:24.789" level="INFO">Sending keys '{CTRL}l' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240723 13:59:24.789" endtime="20240723 13:59:25.363"/>
+<msg timestamp="20240723 14:08:33.049" level="INFO">Sending keys '{CTRL}l' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 14:08:33.048" endtime="20240723 14:08:33.622"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240723 13:59:26.371" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240723 13:59:25.363" endtime="20240723 13:59:26.372"/>
+<msg timestamp="20240723 14:08:34.638" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240723 14:08:33.623" endtime="20240723 14:08:34.638"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys=${USER_NAME}</arg>
@@ -42,8 +42,8 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240723 13:59:26.373" level="INFO">Sending keys '01001a' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240723 13:59:26.372" endtime="20240723 13:59:26.993"/>
+<msg timestamp="20240723 14:08:34.639" level="INFO">Sending keys '01001a' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 14:08:34.638" endtime="20240723 14:08:35.247"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys={ENTER}</arg>
@@ -51,35 +51,35 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240723 13:59:26.995" level="INFO">Sending keys '{ENTER}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240723 13:59:26.994" endtime="20240723 13:59:27.539"/>
+<msg timestamp="20240723 14:08:35.248" level="INFO">Sending keys '{ENTER}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 14:08:35.247" endtime="20240723 14:08:35.792"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240723 13:59:30.555" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240723 13:59:27.540" endtime="20240723 13:59:30.555"/>
+<msg timestamp="20240723 14:08:38.806" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240723 14:08:35.792" endtime="20240723 14:08:38.806"/>
 </kw>
-<status status="PASS" starttime="20240723 13:59:24.788" endtime="20240723 13:59:30.555"/>
+<status status="PASS" starttime="20240723 14:08:33.047" endtime="20240723 14:08:38.806"/>
 </kw>
 <kw name="Select security from dynamic table">
 <kw name="Wait For Element" library="RPA.Desktop">
 <arg>${TABLE_AUTOMATION_ID}</arg>
-<arg>timeout=30s</arg>
 <doc>Wait for an element defined by locator to exist, or
 raise a TimeoutException if none were found within timeout.</doc>
-<msg timestamp="20240723 13:59:30.562" level="FAIL">ValueError: Argument 'timeout' got value '30s' that cannot be converted to float or None.</msg>
-<status status="FAIL" starttime="20240723 13:59:30.560" endtime="20240723 13:59:30.564"/>
+<msg timestamp="20240723 14:08:38.808" level="INFO">Resolving locator: id:59648</msg>
+<msg timestamp="20240723 14:08:38.808" level="FAIL">ValueError: Unknown locator type: id</msg>
+<status status="FAIL" starttime="20240723 14:08:38.808" endtime="20240723 14:08:38.812"/>
 </kw>
 <kw name="Click" library="RPA.Desktop">
 <arg>${TABLE_AUTOMATION_ID}</arg>
 <doc>Click at the element indicated by locator.</doc>
-<status status="NOT RUN" starttime="20240723 13:59:30.566" endtime="20240723 13:59:30.567"/>
+<status status="NOT RUN" starttime="20240723 14:08:38.812" endtime="20240723 14:08:38.812"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240723 13:59:30.567" endtime="20240723 13:59:30.568"/>
+<status status="NOT RUN" starttime="20240723 14:08:38.812" endtime="20240723 14:08:38.814"/>
 </kw>
 <kw name="Find Element" library="RPA.Desktop">
 <var>${element}</var>
@@ -87,24 +87,24 @@ raise a TimeoutException if none were found within timeout.</doc>
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<status status="NOT RUN" starttime="20240723 13:59:30.568" endtime="20240723 13:59:30.569"/>
+<status status="NOT RUN" starttime="20240723 14:08:38.814" endtime="20240723 14:08:38.814"/>
 </kw>
 <kw name="Click" library="RPA.Desktop">
 <arg>${element}</arg>
 <doc>Click at the element indicated by locator.</doc>
-<status status="NOT RUN" starttime="20240723 13:59:30.569" endtime="20240723 13:59:30.570"/>
+<status status="NOT RUN" starttime="20240723 14:08:38.814" endtime="20240723 14:08:38.814"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240723 13:59:30.570" endtime="20240723 13:59:30.570"/>
+<status status="NOT RUN" starttime="20240723 14:08:38.814" endtime="20240723 14:08:38.814"/>
 </kw>
-<status status="FAIL" starttime="20240723 13:59:30.557" endtime="20240723 13:59:30.571"/>
+<status status="FAIL" starttime="20240723 14:08:38.806" endtime="20240723 14:08:38.814"/>
 </kw>
-<status status="FAIL" starttime="20240723 13:59:14.773" endtime="20240723 13:59:30.574">ValueError: Argument 'timeout' got value '30s' that cannot be converted to float or None.</status>
+<status status="FAIL" starttime="20240723 14:08:23.055" endtime="20240723 14:08:38.815">ValueError: Unknown locator type: id</status>
 </test>
 <doc>EGX X-stream Workstation desktop application robot. Opens the EGX X-stream Workstation and performs tasks.</doc>
-<status status="FAIL" starttime="20240723 13:59:13.610" endtime="20240723 13:59:30.578"/>
+<status status="FAIL" starttime="20240723 14:08:21.788" endtime="20240723 14:08:38.816"/>
 </suite>
 <statistics>
 <total>

@@ -13,7 +13,8 @@ ${SECURITY_NAME}          name:EGMFC002DM19
 Open EGX X-stream Workstation desktop application and perform actions
     Open the EGX X-stream Workstation desktop application
     Test login 
-    Select the security
+    Select security from dynamic table
+
 
 *** Keywords ***
 Open the EGX X-stream Workstation desktop application

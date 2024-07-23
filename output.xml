@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240722 16:12:49.502" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20240723 13:45:10.312" rpa="false" schemaversion="4">
 <suite id="s1" name="Tasks" source="c:\Users\dell\Desktop\Ea\example-windows-desktop-app-robot\tasks.robot">
 <test id="s1-t1" name="Open EGX X-stream Workstation desktop application and perform actions" line="12">
 <kw name="Open the EGX X-stream Workstation desktop application">
@@ -7,18 +7,18 @@
 <arg>${APP_NAME}</arg>
 <tag>window</tag>
 <doc>Use Windows search window to launch application.</doc>
-<msg timestamp="20240722 16:12:50.682" level="INFO">Sending keys '{Win}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240722 16:12:51.232" level="INFO">Sending keys 'EGX X-stream Workstation' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20240722 16:12:52.162" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 16:12:50.680" endtime="20240722 16:12:55.706"/>
+<msg timestamp="20240723 13:45:12.180" level="INFO">Sending keys '{Win}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240723 13:45:12.725" level="INFO">Sending keys 'EGX X-stream Workstation' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240723 13:45:13.617" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 13:45:12.179" endtime="20240723 13:45:17.172"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240722 16:13:00.711" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20240722 16:12:55.707" endtime="20240722 16:13:00.711"/>
+<msg timestamp="20240723 13:45:22.187" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240723 13:45:17.172" endtime="20240723 13:45:22.187"/>
 </kw>
-<status status="PASS" starttime="20240722 16:12:50.679" endtime="20240722 16:13:00.712"/>
+<status status="PASS" starttime="20240723 13:45:12.178" endtime="20240723 13:45:22.189"/>
 </kw>
 <kw name="Test login">
 <kw name="Send Keys" library="RPA.Windows">
@@ -27,14 +27,14 @@
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240722 16:13:00.716" level="INFO">Sending keys '{CTRL}l' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 16:13:00.715" endtime="20240722 16:13:01.303"/>
+<msg timestamp="20240723 13:45:22.193" level="INFO">Sending keys '{CTRL}l' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 13:45:22.192" endtime="20240723 13:45:22.779"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240722 16:13:02.307" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20240722 16:13:01.304" endtime="20240722 16:13:02.307"/>
+<msg timestamp="20240723 13:45:23.792" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240723 13:45:22.780" endtime="20240723 13:45:23.793"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys=${USER_NAME}</arg>
@@ -42,8 +42,8 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240722 16:13:02.308" level="INFO">Sending keys '01001a' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 16:13:02.307" endtime="20240722 16:13:02.917"/>
+<msg timestamp="20240723 13:45:23.795" level="INFO">Sending keys '01001a' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 13:45:23.794" endtime="20240723 13:45:24.416"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys={ENTER}</arg>
@@ -51,16 +51,16 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<msg timestamp="20240722 16:13:02.919" level="INFO">Sending keys '{ENTER}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20240722 16:13:02.917" endtime="20240722 16:13:03.458"/>
+<msg timestamp="20240723 13:45:24.419" level="INFO">Sending keys '{ENTER}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\86584fa_b1f3c24_6133770e\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240723 13:45:24.417" endtime="20240723 13:45:24.976"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240722 16:13:06.461" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240722 16:13:03.458" endtime="20240722 16:13:06.462"/>
+<msg timestamp="20240723 13:45:27.983" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240723 13:45:24.976" endtime="20240723 13:45:27.983"/>
 </kw>
-<status status="PASS" starttime="20240722 16:13:00.714" endtime="20240722 16:13:06.462"/>
+<status status="PASS" starttime="20240723 13:45:22.190" endtime="20240723 13:45:27.984"/>
 </kw>
 <kw name="Select the security">
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
@@ -77,19 +77,19 @@ defined by given locator.</doc>
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:06.464" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:06.466" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:06.464" endtime="20240722 16:13:06.468"/>
+<msg timestamp="20240723 13:45:27.993" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:27.993" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:27.991" endtime="20240723 13:45:28.038"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:06.468" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:06.468" endtime="20240722 16:13:06.471"/>
+<msg timestamp="20240723 13:45:28.038" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:28.038" endtime="20240723 13:45:28.040"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:06.463" endtime="20240722 16:13:06.471"/>
+<status status="FAIL" starttime="20240723 13:45:27.989" endtime="20240723 13:45:28.040"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -99,19 +99,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:08.475" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:08.476" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:08.474" endtime="20240722 16:13:08.477"/>
+<msg timestamp="20240723 13:45:30.053" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:30.054" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:30.051" endtime="20240723 13:45:30.055"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:08.477" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:08.477" endtime="20240722 16:13:08.479"/>
+<msg timestamp="20240723 13:45:30.056" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:30.055" endtime="20240723 13:45:30.057"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:08.473" endtime="20240722 16:13:08.480"/>
+<status status="FAIL" starttime="20240723 13:45:30.048" endtime="20240723 13:45:30.057"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -121,19 +121,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:10.487" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:10.487" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:10.486" endtime="20240722 16:13:10.488"/>
+<msg timestamp="20240723 13:45:32.063" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:32.063" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:32.062" endtime="20240723 13:45:32.064"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:10.488" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:10.488" endtime="20240722 16:13:10.490"/>
+<msg timestamp="20240723 13:45:32.065" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:32.064" endtime="20240723 13:45:32.067"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:10.486" endtime="20240722 16:13:10.490"/>
+<status status="FAIL" starttime="20240723 13:45:32.061" endtime="20240723 13:45:32.067"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -143,19 +143,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:12.502" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:12.503" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:12.502" endtime="20240722 16:13:12.503"/>
+<msg timestamp="20240723 13:45:34.084" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:34.084" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:34.083" endtime="20240723 13:45:34.084"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:12.504" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:12.504" endtime="20240722 16:13:12.506"/>
+<msg timestamp="20240723 13:45:34.086" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:34.086" endtime="20240723 13:45:34.087"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:12.501" endtime="20240722 16:13:12.506"/>
+<status status="FAIL" starttime="20240723 13:45:34.082" endtime="20240723 13:45:34.088"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -165,19 +165,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:14.511" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:14.511" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:14.510" endtime="20240722 16:13:14.512"/>
+<msg timestamp="20240723 13:45:36.092" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:36.093" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:36.091" endtime="20240723 13:45:36.094"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:14.512" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:14.512" endtime="20240722 16:13:14.513"/>
+<msg timestamp="20240723 13:45:36.096" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:36.095" endtime="20240723 13:45:36.098"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:14.510" endtime="20240722 16:13:14.514"/>
+<status status="FAIL" starttime="20240723 13:45:36.089" endtime="20240723 13:45:36.100"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -187,19 +187,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:16.521" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:16.522" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:16.520" endtime="20240722 16:13:16.522"/>
+<msg timestamp="20240723 13:45:38.116" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:38.116" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:38.115" endtime="20240723 13:45:38.117"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:16.523" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:16.523" endtime="20240722 16:13:16.525"/>
+<msg timestamp="20240723 13:45:38.118" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:38.117" endtime="20240723 13:45:38.119"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:16.519" endtime="20240722 16:13:16.526"/>
+<status status="FAIL" starttime="20240723 13:45:38.115" endtime="20240723 13:45:38.119"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -209,19 +209,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:18.529" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:18.530" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:18.529" endtime="20240722 16:13:18.531"/>
+<msg timestamp="20240723 13:45:40.125" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:40.126" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:40.123" endtime="20240723 13:45:40.127"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:18.531" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:18.531" endtime="20240722 16:13:18.532"/>
+<msg timestamp="20240723 13:45:40.128" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:40.128" endtime="20240723 13:45:40.130"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:18.528" endtime="20240722 16:13:18.532"/>
+<status status="FAIL" starttime="20240723 13:45:40.122" endtime="20240723 13:45:40.131"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -231,19 +231,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:20.538" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:20.539" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:20.536" endtime="20240722 16:13:20.540"/>
+<msg timestamp="20240723 13:45:42.134" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:42.134" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:42.134" endtime="20240723 13:45:42.135"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:20.541" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:20.540" endtime="20240722 16:13:20.543"/>
+<msg timestamp="20240723 13:45:42.136" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:42.136" endtime="20240723 13:45:42.137"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:20.535" endtime="20240722 16:13:20.543"/>
+<status status="FAIL" starttime="20240723 13:45:42.133" endtime="20240723 13:45:42.138"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -253,19 +253,19 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:22.552" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:22.552" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:22.552" endtime="20240722 16:13:22.554"/>
+<msg timestamp="20240723 13:45:44.152" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:44.152" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:44.152" endtime="20240723 13:45:44.153"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:22.554" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:22.554" endtime="20240722 16:13:22.556"/>
+<msg timestamp="20240723 13:45:44.154" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:44.153" endtime="20240723 13:45:44.155"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:22.551" endtime="20240722 16:13:22.556"/>
+<status status="FAIL" starttime="20240723 13:45:44.152" endtime="20240723 13:45:44.155"/>
 </kw>
 <kw name="Element Should Be Present">
 <arg>${SECURITY_LOCATOR}</arg>
@@ -275,41 +275,41 @@ Raises ``ElementNotFound`` if` no matches were found, or
 <doc>Find an element defined by locator, and return its position.
 Raises ``ElementNotFound`` if` no matches were found, or
 ``MultipleElementsFound`` if there were multiple matches.</doc>
-<msg timestamp="20240722 16:13:24.563" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
-<msg timestamp="20240722 16:13:24.563" level="FAIL">ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:24.562" endtime="20240722 16:13:24.563"/>
+<msg timestamp="20240723 13:45:46.162" level="INFO">Resolving locator: name:EGMFC001MM19</msg>
+<msg timestamp="20240723 13:45:46.163" level="FAIL">ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:46.161" endtime="20240723 13:45:46.164"/>
 </kw>
 <kw name="Run Keyword Unless" library="BuiltIn">
 <arg>${len(${elements})} &gt; 0</arg>
 <arg>Fail</arg>
 <arg>Element not found with locator '${locator}'</arg>
 <doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20240722 16:13:24.564" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<status status="NOT RUN" starttime="20240722 16:13:24.564" endtime="20240722 16:13:24.566"/>
+<msg timestamp="20240723 13:45:46.165" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20240723 13:45:46.165" endtime="20240723 13:45:46.168"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:24.562" endtime="20240722 16:13:24.566"/>
+<status status="FAIL" starttime="20240723 13:45:46.160" endtime="20240723 13:45:46.168"/>
 </kw>
-<msg timestamp="20240722 16:13:24.566" level="FAIL">Keyword 'Element Should Be Present' failed after retrying 10 times. The last error was: ValueError: Unknown locator type: name</msg>
-<status status="FAIL" starttime="20240722 16:13:06.463" endtime="20240722 16:13:24.567"/>
+<msg timestamp="20240723 13:45:46.168" level="FAIL">Keyword 'Element Should Be Present' failed after retrying 10 times. The last error was: ValueError: Unknown locator type: name</msg>
+<status status="FAIL" starttime="20240723 13:45:27.988" endtime="20240723 13:45:46.168"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>${SECURITY_LOCATOR}</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20240722 16:13:24.567" endtime="20240722 16:13:24.567"/>
+<status status="NOT RUN" starttime="20240723 13:45:46.169" endtime="20240723 13:45:46.169"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240722 16:13:24.568" endtime="20240722 16:13:24.568"/>
+<status status="NOT RUN" starttime="20240723 13:45:46.170" endtime="20240723 13:45:46.170"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:13:06.463" endtime="20240722 16:13:24.568"/>
+<status status="FAIL" starttime="20240723 13:45:27.985" endtime="20240723 13:45:46.171"/>
 </kw>
-<status status="FAIL" starttime="20240722 16:12:50.678" endtime="20240722 16:13:24.569">Keyword 'Element Should Be Present' failed after retrying 10 times. The last error was: ValueError: Unknown locator type: name</status>
+<status status="FAIL" starttime="20240723 13:45:12.177" endtime="20240723 13:45:46.172">Keyword 'Element Should Be Present' failed after retrying 10 times. The last error was: ValueError: Unknown locator type: name</status>
 </test>
 <doc>EGX X-stream Workstation desktop application robot. Opens the EGX X-stream Workstation and performs tasks.</doc>
-<status status="FAIL" starttime="20240722 16:12:49.507" endtime="20240722 16:13:24.572"/>
+<status status="FAIL" starttime="20240723 13:45:10.319" endtime="20240723 13:45:46.174"/>
 </suite>
 <statistics>
 <total>
@@ -322,15 +322,15 @@ Raises ``ElementNotFound`` if` no matches were found, or
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240722 16:13:06.468" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:08.477" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:10.488" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:12.504" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:14.512" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:16.523" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:18.531" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:20.541" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:22.554" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20240722 16:13:24.564" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:28.038" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:30.056" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:32.065" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:34.086" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:36.096" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:38.118" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:40.128" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:42.136" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:44.154" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20240723 13:45:46.165" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
 </errors>
 </robot>

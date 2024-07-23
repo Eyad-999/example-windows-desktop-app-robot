@@ -4,9 +4,10 @@ Library           RPA.Windows
 Library           RPA.Desktop
 
 *** Variables ***
-${APP_NAME}       EGX X-stream Workstation
-${USER_NAME}      01001a
-${SECURITY_LOCATOR}    name:EGMFC001MM19
+${APP_NAME}               EGX X-stream Workstation
+${USER_NAME}              01001a
+${TABLE_AUTOMATION_ID}    id:59648
+${SECURITY_NAME}          name:EGMFC002DM19
 
 *** Test Cases ***
 Open EGX X-stream Workstation desktop application and perform actions
@@ -27,10 +28,12 @@ Test login
     Send Keys    keys={ENTER}
     Sleep    3s  # Wait for the login to complete
 
-Select the security 
-    # Wait until the element is present and then click it
-    Wait Until Keyword Succeeds    10x    2s    Element Should Be Present    ${SECURITY_LOCATOR}
-    RPA.Windows.Click              ${SECURITY_LOCATOR}
+Select security from dynamic table
+    Wait For Element    ${TABLE_AUTOMATION_ID}    timeout=30s
+    RPA.Desktop.Click   ${TABLE_AUTOMATION_ID}
+    Sleep    1s
+    ${element}  Find Element    ${SECURITY_NAME}
+    RPA.Desktop.Click   ${element}
     Sleep    3s  # Wait for the selection to take effect
 
 Element Should Be Present

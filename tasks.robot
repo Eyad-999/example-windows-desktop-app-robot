@@ -30,7 +30,7 @@ Test login
     Sleep    3s  # Wait for the login to complete
 
 Select security from dynamic table
-    Wait For Element    ${TABLE_AUTOMATION_ID}    timeout=30s
+    Wait For Element    ${TABLE_AUTOMATION_ID}    
     RPA.Desktop.Click   ${TABLE_AUTOMATION_ID}
     Sleep    1s
     ${element}  Find Element    ${SECURITY_NAME}
